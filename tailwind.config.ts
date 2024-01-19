@@ -73,8 +73,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ['var(--font-sen)'],
-        'sans-bis': ['var(--font-outfit)'],
+        sans: ['var(--font-nunito)'],
+        'sans-bis': ['var(--font-pt-sans)'],
       },
     },
   },

@@ -26,13 +26,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col w-full md:w-4/5 font-sans-bis mt-12">
               <div className="mb-4 text-[#B3B0B5]">For project updates and early access, enter your email.</div>
-              <form className="flex justify-start h-14">
+              <form className="flex justify-start h-14 group focus-within:ring-1 focus-within:ring-ring rounded-sm">
                 <Input
-                  className="rounded-none text-lg text-white placeholder-[#5F5A5F] focus:ring-0 h-full bg-[#1E1A1E]"
+                  className="rounded-tl rounded-bl text-lg text-white placeholder-[#5F5A5F] h-full bg-[#1E1A1E]"
                   placeholder="Enter your email"
                   type="email"
                 />
-                <Button className="rounded-none h-full bg-[#1E1A1E]">
+                <Button className="rounded-tr rounded-br h-full bg-[#1E1A1E]">
                   <MoveRight strokeWidth={1} width={30} height={30}/>
                 </Button>
               </form>
