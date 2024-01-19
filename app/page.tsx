@@ -39,8 +39,17 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[40%]">
-            <video autoPlay loop className="opacity-100 rounded-full"
-                   style={{boxShadow: 'rgba(249, 165, 165, 0.84) 0px 0px 30px -5px'}}>
+            <video
+              className="rounded-full"
+              style={{boxShadow: 'rgba(249, 165, 165, 0.84) 0px 0px 30px -5px'}}
+              autoPlay={true}
+              controls={false}
+              controlsList="nofullscreen nodownload noremoteplayback noplaybackrate"
+              disablePictureInPicture={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+            >
               <source src={"./ai_consciousness.mp4"} type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
