@@ -1,13 +1,14 @@
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {MoveRight} from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div
       className="min-h-screen flex flex-col px-8 py-16 font-sans w-full sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
       <header className="w-full mb-16 flex justify-start">
-        <h1 className="text-xl md:text-2xl lg:text-3xl tracking-widest uppercase text-white font-sans-bis">BitGPT</h1>
+        <Image src="logo.svg" alt="logo" width={240} height={240}/>
       </header>
       <main className="h-full text-left flex flex-col justify-between">
         <div className="flex">
