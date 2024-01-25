@@ -1,5 +1,4 @@
 import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
 import {MoveRight} from "lucide-react";
 import Image from "next/image";
 
@@ -25,21 +24,13 @@ export default function Home() {
               Experience the evolution of AI with BitGPT, where technology meets individual autonomy to shape the future
               of digital democracy.
             </p>
-            <div className="flex flex-col w-full md:w-4/5 font-sans-bis mt-12">
-              <div className="mb-4 text-[#B3B0B5]">For project updates and early access, enter your email.</div>
-              <form className="flex justify-start h-14 group focus-within:ring-1 focus-within:ring-ring rounded-sm">
-                <Input
-                  className="rounded-tl rounded-bl text-lg text-white placeholder-[#5F5A5F] h-full bg-[#1E1A1E]"
-                  placeholder="Enter your email"
-                  type="email"
-                />
-                <Button className="rounded-tr rounded-br h-full bg-[#1E1A1E]">
-                  <MoveRight strokeWidth={1} width={30} height={30}/>
-                </Button>
-              </form>
+            <div className="flex flex-col w-full md:w-3/5 font-sans-bis mt-12 mb-8">
+              {/*@ts-ignore*/}
+              <form-widget mode='popup' ucid='0kG0aWwJxAO3sU4XPdJMBCPk8xQ' component="customButton"/>
+              <Button size="lg" type="button" className="vrlps-trigger bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Join the Waitlist</Button>
             </div>
           </div>
-            <div className="w-[70%] sm:w-[55%] md:w-[42%]">
+          <div className="w-[70%] sm:w-[55%] md:w-[42%]">
               <Image
                 className="rotate-animate"
                 style={{clipPath: "circle(39%)"}}

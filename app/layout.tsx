@@ -1,5 +1,6 @@
+import Script from 'next/script'
 import type {Metadata} from 'next'
-import {Nunito, Outfit, PT_Sans, Sen} from 'next/font/google'
+import {Nunito, PT_Sans} from 'next/font/google'
 import './globals.css'
 
 const nunito = Nunito({subsets: ['latin'], display: 'swap', variable: '--font-nunito'})
@@ -15,6 +16,11 @@ export default function RootLayout({children}: {
 }) {
   return (
     <html lang="en">
+    <Script
+      type="text/javascript"
+      id="viral-loops-loader"
+      data-campaign-id="0kG0aWwJxAO3sU4XPdJMBCPk8xQ"
+      src={"https://app.viral-loops.com/widgetsV2/core/loader.js"}/>
     <body className={`${nunito.variable} ${ptSans.variable}`}>{children}</body>
     </html>
   )
