@@ -75,19 +75,6 @@
         @apply bg-background text-foreground;
     }
 
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    .rotate-animate {
-        animation: rotate 28s linear infinite;
-    }
-
     .gradient {
         background: linear-gradient(to right, hsl(0, 85%, 70%) 10%, hsl(12, 82%, 60%) 40%, hsl(26, 85%, 70%) 70%, hsl(31, 85%, 50%));
         -webkit-background-clip: text;
