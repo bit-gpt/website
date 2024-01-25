@@ -42,7 +42,7 @@ export default function Home() {
             <div className="w-[70%] sm:w-[55%] md:w-[42%]">
               <Image
                 className="rotate-animate"
-                style={{clipPath: "circle(42%)"}}
+                style={{clipPath: "circle(39%)"}}
                 src="/cosmos_0.jpeg"
                 alt="cosmos"
                 width={500}
