@@ -39,24 +39,18 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <div className="w-[40%]">
-            <video
-              className="rounded-full"
-              style={{boxShadow: 'rgba(249, 165, 165, 0.84) 0px 0px 30px -5px'}}
-              autoPlay={true}
-              controls={false}
-              controlsList="nofullscreen nodownload noremoteplayback noplaybackrate"
-              disablePictureInPicture={true}
-              loop={true}
-              muted={true}
-              playsInline={true}
-            >
-              <source src={"./ai_consciousness.mp4"} type="video/mp4"/>
-              Your browser does not support the video tag.
-            </video>
+            <div className="w-[70%] sm:w-[55%] md:w-[42%]">
+              <Image
+                className="rotate-animate"
+                style={{clipPath: "circle(42%)"}}
+                src="/cosmos_0.jpeg"
+                alt="cosmos"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
-        </div>
       </main>
     </div>
-  )
+)
 }
