@@ -20,7 +20,9 @@ export default function RootLayout({children}: {
       type="text/javascript"
       id="viral-loops-loader"
       data-campaign-id="0kG0aWwJxAO3sU4XPdJMBCPk8xQ"
-      src={"https://app.viral-loops.com/widgetsV2/core/loader.js"}/>
+      src={"https://app.viral-loops.com/widgetsV2/core/loader.js"}
+      strategy="lazyOnload"
+    />
     <body className={`${nunito.variable} ${ptSans.variable}`}>{children}</body>
     </html>
   )
